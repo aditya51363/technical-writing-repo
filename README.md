@@ -15,8 +15,6 @@ Topics covered include:
 - Creating and formatting tables
 - Inserting pictures and other visual elements
 
-[Explore LaTeX](LaTeX/README.md)
-
 ### 2. Doxygen
 A documentation generation tool that helps create structured documentation directly from source code.
 
@@ -26,8 +24,6 @@ Topics covered include:
 - Documenting functions, classes and variables
 - Generating documentation in different formats
 
-[Explore Doxygen](Doxygen/README.md)
-
 ### 3. Google Docs
 A cloud-based document editor used for creating, formatting and collaborating on documents.
 
@@ -36,8 +32,6 @@ Topics covered include:
 - Working with text, tables and images
 - Page layout and document organization
 - Sharing and collaborative editing
-
-[Explore Google Docs](Google-Docs/README.md)
 
 ### 4. Git
 A distributed version control system used to track changes in files and manage project development.
@@ -50,8 +44,6 @@ Topics covered include:
 - Managing remote repositories
 - Commonly used Git commands
 
-[Explore Git](Git/README.md)
-
 ### 5. GitHub
 A platform for hosting Git repositories and collaborating on software and documentation projects.
 
@@ -62,8 +54,6 @@ Topics covered include:
 - Working with commits and branches
 - Repository documentation using Markdown
 - Collaboration through GitHub features
-
-[Explore GitHub](GitHub/README.md)
 
 ## Practical Work and Projects
 
@@ -99,4 +89,4 @@ It also demonstrates the application of these tools in creating technical docume
 
 ---
 
-*Technical Writing Coursework | 2026*
+
