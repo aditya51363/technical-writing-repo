@@ -1,65 +1,72 @@
-# Doxygen
+# Git
 
-Doxygen is a tool used to automatically generate documentation from source code. We can add specially formatted comments to our programs, and Doxygen uses these comments to create proper documentation for functions, classes and other parts of the code.
+Git is the version control tool I used to keep track of changes in a project. The Git Basics exercise helped me understand its workflow by creating a small repository and making changes step by step.
 
-It is especially useful when working on larger projects where understanding and maintaining code becomes difficult.
+## Creating a repository
 
-## 1. Introduction to Doxygen
-- What Doxygen is and why it is used.
-- Supported languages like C, C++, Python and Java.
-- Generating reference manuals and API documentation.
+I started by creating a project folder and running:
 
-## 2. Features of Doxygen
-- Extracting information from source code comments.
-- Documenting functions, classes and modules.
-- Creating call graphs and inheritance diagrams.
-- Supporting Markdown, formulas and diagrams.
+```bash
+git init
+```
 
-## 3. Installation and Setup
-- Installing Doxygen on Windows, macOS and Linux.
-- Checking the installation.
-- Creating a configuration file (`Doxyfile`).
-- Setting input and output options.
+This initialises a Git repository in the current folder. I then set the name and email that Git records with my commits:
 
-## 4. Documentation Comments
+```bash
+git config user.name "Your Name"
+git config user.email "you@example.com"
+```
 
-This is probably the most important part of Doxygen. We write specially formatted comments in our code so that Doxygen can understand and include them in the generated documentation.
+## From editing to committing
 
-Some commonly used tags are:
-- `\brief` – Short description.
-- `\param` – Description of a parameter.
-- `\return` – Description of the return value.
-- `\author` – Author information.
-- `\version` – Version details.
-- `\note` – Additional information.
-- `\see` – Reference to related functions or sections.
+One important thing I learned is that saving a file does not automatically save it in Git history. There are three main stages:
 
-We also looked at documenting classes and their member functions.
+1. Make changes in the working directory.
+2. Use `git add` to stage the changes I want to keep.
+3. Use `git commit` to record those staged changes.
 
-## 5. Generating Documentation
-The basic process is quite simple:
-- Add documentation comments to the source code.
-- Create and configure the Doxyfile.
-- Run Doxygen to generate the documentation.
-- Open the generated files and explore them.
+For example:
 
-## 6. Output Formats
+```bash
+git status
+git add readme.txt
+git commit -m "Add readme file"
+```
 
-Doxygen supports different formats depending on how we want to use the documentation.
+`git status` shows which files are untracked, modified or staged. I also used `git diff` to review changes before committing them.
 
-- HTML – View documentation in a browser.
-- LaTeX/PDF – Printable documentation.
-- XML, RTF and DocBook – Other supported formats.
+## Reviewing and undoing changes
 
-## 7. Diagrams and Best Practices
-Doxygen can also generate diagrams such as call graphs, include diagrams and inheritance diagrams. Graphviz can be used for generating these diagrams.
+The exercise helped me understand the difference between a few commands:
 
-A few things to keep in mind:
-- Write clear and meaningful descriptions.
-- Document important functions and classes.
-- Keep documentation consistent.
-- Update comments whenever the code changes.
+- `git restore filename` discards unstaged changes in a file and restores it to the version in the index.
+- `git revert <commit>` creates a new commit that reverses an earlier commit, while keeping the earlier commit in the history.
+- `git checkout <commit>` can move the working directory and `HEAD` to an earlier snapshot. Checking out a commit directly can put Git in a detached `HEAD` state.
 
----
+I used `git log` and `git log --oneline` to review commit history. I also learned to check the branch name before switching. In the exercise, the repository used `master`, so `git checkout main` did not work there.
+
+## Branches and remote repositories
+
+Branches let me work on changes separately before bringing them together. Remote commands connect a local repository to a hosted copy, such as one on GitHub.
+
+```bash
+git branch
+git switch -c feature-name
+git merge feature-name
+git remote -v
+git push
+git pull
+```
+
+For a grouped list of commands, see the [Git commands reference](commands.md).
+
+## What I learned
+
+The most useful distinction for me was between `add`, `commit` and `push`: `add` stages changes, `commit` records them locally, and `push` sends commits to a remote repository. Checking `git status` regularly also makes it easier to understand what Git is about to do.
+
+## Practical work
+
+[`Assignment_8_Git_Basics.pdf`](Assignment_8_Git_Basics.pdf) contains the step-by-step exercise and the commands used with the sample project.
+
 
 
