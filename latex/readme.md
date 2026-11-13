@@ -1,61 +1,44 @@
 # LaTeX
 
-LaTeX is a document preparation system used for creating well-structured and properly formatted documents. Unlike regular text editors, it uses commands to control the appearance and layout of the content. It is especially useful for technical documents, reports and academic work.
+LaTeX is a document preparation system. I write the content and formatting instructions in a `.tex` file, then compile it to create the final document. At first, working with commands felt different from using a regular word processor, but it gave me more control over the layout.
 
-During the course, we explored some of its basic features and learned how they can be used while preparing documents.
+## Setting up a document
 
-## 1. Creating Documents
+A LaTeX document has two main parts:
 
-We started with the basics of creating a document in LaTeX. This included understanding the general structure of a document, the role of the preamble and the document body.
+- The **preamble**, where I choose the document class and load packages.
+- The **document body**, between `\begin{document}` and `\end{document}`, where the actual content goes.
 
-We also explored:
-- Different document classes such as article and report.
-- Sections and subsections for organizing content.
-- Basic text formatting and paragraph structure.
-- How a LaTeX document is compiled into a PDF.
+In the exercises, I used the `article` class and practised adding titles, sections and subsections.
 
-## 2. Working with Colors
+## Organising content
 
-LaTeX provides options to add colors to text and other document elements. We explored the use of the `xcolor` package and how colors can be applied to make documents more presentable.
+I practised three list environments:
 
-Some things covered:
-- Changing text colors.
-- Highlighting text using background colors.
-- Defining custom colors.
-- Using RGB values to create different shades.
+- `itemize` for bullet points.
+- `enumerate` for numbered lists.
+- `description` for terms with explanations.
 
-## 3. Creating Tables
+Using sections and lists made it easier to divide information into smaller, readable parts.
 
-Tables help present information in an organized manner. We explored how to create tables in LaTeX and arrange information into rows and columns.
+## Tables and colours
 
-This included:
-- Creating rows and columns.
-- Aligning text to the left, right or center.
-- Adding horizontal and vertical borders.
-- Formatting tables to improve readability.
+The exercises gave me practice with the `tabular` environment, where column specifiers such as `l`, `c` and `r` control alignment. I also used fixed-width columns with `p{...}`.
 
-## 4. Beamer Slides
+Packages including `xcolor`, `colortbl`, `array`, `multirow` and `booktabs` helped me add colours, adjust columns, merge cells and improve the appearance of tables.
 
-Beamer is a LaTeX document class used for creating presentations. It allows us to prepare slides with consistent formatting and a structured layout.
+## Images and figures
 
-We explored:
-- Creating presentations and individual slides.
-- Adding titles and organizing slide content.
-- Using bullet points and lists.
-- Applying themes and formatting to presentations.
+I used the `graphicx` package and `\includegraphics` to add images. I also practised adjusting image width, cropping with `trim` and `clip`, and placing images in a `figure` environment with captions and labels. The `minipage` environment was useful for putting two images side by side.
 
-## 5. Inserting Pictures
+## Beamer presentations
 
-LaTeX also allows images to be included in documents. We explored how pictures can be inserted and adjusted according to the requirements of a document.
+I also explored Beamer, a LaTeX document class for presentations. The work introduced creating slides, adding titles and lists, and using a theme to keep the slides consistent.
 
-Topics included:
-- Using the `graphicx` package.
-- Inserting images into documents.
-- Adjusting image size and alignment.
-- Adding captions and positioning images.
+## What I learned
 
----
+The main thing I took away is that LaTeX separates the content from the formatting instructions. It takes some time to get comfortable with the syntax, but once a document is structured properly, formatting can be reused consistently.
 
-This section contains the LaTeX concepts and practical work covered as part of the Technical Writing course.
+## Practical files
 
-*Technical Writing Coursework | 2026*
+The ZIP files in this folder contain the `.tex` exercises and their supporting images. They are the practical examples behind the topics described above.
