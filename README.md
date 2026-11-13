@@ -1,92 +1,47 @@
-# Technical Writing – 2026
+# Technical Writing Coursework
 
-Welcome to the Technical Writing coursework repository. This repository contains the concepts, tools, techniques, practical exercises and projects explored throughout the Technical Writing course.
+This repository contains the tools and practical work I explored during the Technical Writing course. Each topic has its own folder with a short README explaining what I worked on and the main things I learned.
 
-The repository is organized into different sections, with each folder dedicated to a particular tool or topic. It includes theoretical explanations, relevant commands, practical implementations and project work completed as part of the coursework.
+## Topics
 
-## Course Contents
+| Topic | What I learned and practised |
+|---|---|
+| [LaTeX](latex/readme.md) | Creating structured documents and presentations, and working with lists, tables, colours and images. |
+| [Git](git/readme.md) | Tracking changes, staging files, making commits and reviewing project history. |
+| [GitHub](github/readme.md) | Hosting repositories, sharing work and using collaboration features. |
+| [Doxygen](doxygen/readme.md) | Writing documentation comments in C++ and generating reference documentation. |
+| [Google Docs](google-docs/readme.md) | Formatting documents, organising content and collaborating through sharing and comments. |
 
-### 1. LaTeX
-A document preparation system used for creating structured and professionally formatted documents.
-
-Topics covered include:
-- Creating and formatting documents
-- Working with colors using LaTeX packages
-- Creating and formatting tables
-- Inserting pictures and other visual elements
-
-### 2. Doxygen
-A documentation generation tool that helps create structured documentation directly from source code.
-
-Topics covered include:
-- Introduction to automated code documentation
-- Writing documentation comments
-- Documenting functions, classes and variables
-- Generating documentation in different formats
-
-### 3. Google Docs
-A cloud-based document editor used for creating, formatting and collaborating on documents.
-
-Topics covered include:
-- Document creation and formatting
-- Working with text, tables and images
-- Page layout and document organization
-- Sharing and collaborative editing
-
-### 4. Git
-A distributed version control system used to track changes in files and manage project development.
-
-Topics covered include:
-- Understanding version control
-- Initializing and cloning repositories
-- Tracking, staging and committing changes
-- Working with branches
-- Managing remote repositories
-- Commonly used Git commands
-
-### 5. GitHub
-A platform for hosting Git repositories and collaborating on software and documentation projects.
-
-Topics covered include:
-- Creating and managing repositories
-- Understanding the relationship between Git and GitHub
-- Uploading and maintaining project files
-- Working with commits and branches
-- Repository documentation using Markdown
-- Collaboration through GitHub features
-
-## Practical Work and Projects
-
-Each topic has its own dedicated folder containing relevant documentation and practical work.
-
-These folders include:
-- Practical exercises performed during the course
-- Project files and implementations
-- Supporting material and examples related to the respective topics
-
-The aim is to keep theoretical concepts and their practical applications organized together, making it easier to understand and revisit the work.
-
-## Repository Structure
+## Repository structure
 
 ```text
-Technical-Writing-2026/
+technical-writing-repo-main/
 │
 ├── README.md
-├── LaTeX/
-├── Doxygen/
-├── Google-Docs/
-├── Git/
-└── GitHub/
+│
+├── latex/
+│   ├── readme.md
+│   ├── 3sep.zip
+│   └── 17sep.zip
+│
+├── git/
+│   ├── readme.md
+│   ├── commands.md
+│   └── Assignment_8_Git_Basics.pdf
+│
+├── github/
+│   └── readme.md
+│
+├── doxygen/
+│   ├── readme.md
+│   └── Assignment 7.zip
+│
+└── google-docs/
+    └── readme.md
 ```
 
-Each topic folder contains its own README file along with the corresponding practical work and project files, wherever applicable.
+## How to use this repository
 
-## Purpose of This Repository
+Open the README inside a topic folder to see a short explanation of the work and the concepts covered. The practical files and assignment archives are kept in their respective folders so they are easy to find alongside the related notes.
 
-This repository acts as a consolidated record of the learning and practical experience gained during the Technical Writing course. It brings together different documentation tools and techniques, providing an organized reference for concepts, commands and implementations.
-
-It also demonstrates the application of these tools in creating technical documents, code documentation and maintaining project work using version control.
-
----
-
-
+This repository is a record of my coursework and learning. The READMEs focus on the tools I used and what I understood from the exercises; they are not intended to be complete manuals for each tool.
